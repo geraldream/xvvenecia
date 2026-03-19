@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Invitación XV Años Venecia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Open Graph (WhatsApp + Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Invitación XV Años Venecia">
+<meta property="og:description" content="Acompáñame en un día inolvidable.">
+<meta property="og:url" content="https://geraldream.github.io/xvvenecia/">
+<meta property="og:image" content="https://geraldream.github.io/xvvenecia/Miniatura2.jpg">
+<meta property="og:image:secure_url" content="https://geraldream.github.io/xvvenecia/Miniatura2.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Invitación XV Años Venecia">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Invitación XV Años Venecia">
+<meta name="twitter:description" content="Acompáñame en un día inolvidable.">
+<meta name="twitter:image" content="https://geraldream.github.io/xvvenecia/Miniatura2.jpg">
+
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#fff}
+body{background:url("Fondotodo.jpg") center/cover no-repeat}
+
+#sobre,#contenedor,.seccion{width:100vw;height:100vh}
+#sobre{display:flex;justify-content:center;align-items:center;background:#fff}
+#contenedor{display:none;overflow-y:auto;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
+.seccion{display:flex;justify-content:center;align-items:center;position:relative;scroll-snap-align:start}
+
+img{max-width:100vw;max-height:100vh;object-fit:contain;display:block}
+[id$="-wrapper"]{position:relative;display:inline-block}
+
+/* contador */
+#contador{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  display:flex;gap:4vh;text-align:center;
+  font:700 8vh 'Great Vibes',cursive;color:#266d62;
+  -webkit-text-stroke:.01px #b8860b
+}
+.bloque{display:flex;flex-direction:column;align-items:center}
+.label{font-size:3vh;margin-top:1vh}
+
+/* botón */
+#playpause{
+  position:absolute;bottom:150px;left:70px;width:70px;height:70px;
+  border-radius:50%;background:#266d62;color:#fff;font-size:24px;
+  display:flex;justify-content:center;align-items:center;cursor:pointer;border:none;
+  -webkit-text-stroke:1px #b8860b;
+  box-shadow:0 0 6px rgba(184,134,11,.6);
+  transition:.3s
+}
+#playpause:hover{background:#2f8a7a;transform:scale(1.1)}
+
+#fondo4-img,#fondo5-img,#fondo6-img{pointer-events:none}
+
+/* links */
+[class^="link-"]{position:absolute;background:transparent;z-index:20}
+.link-ceremonia{top:43.4%;left:33.4%;width:33.1%;height:3.6%}
+.link-recepcion{top:81%;left:32.5%;width:33.1%;height:3.6%}
+.link-liverpool{top:32.4%;left:35.2%;width:27.8%;height:5.2%}
+.link-whatsapp{top:76.6%;left:43.1%;width:13.9%;height:7.8%}
+
+/* ✨ ESTELA MÁGICA */
+#magia{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:999;
+}
+
+.particula{
+  position:absolute;
+  border-radius:50%;
+  background:radial-gradient(circle,#fff,#ffe7b0,#ffb347);
+  box-shadow:0 0 8px #fff,0 0 20px #ffd27a,0 0 40px #ffb347;
+  opacity:0;
+  animation:trayectoria linear forwards;
+}
+
+/* trayectoria curva con giro */
+@keyframes trayectoria{
+  0%{transform:translate(0,0) scale(1);opacity:0}
+  10%{opacity:1}
+  50%{transform:translate(var(--x1),var(--y1)) scale(1.2)}
+  100%{transform:translate(var(--x2),var(--y2)) scale(.4);opacity:0}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ✨ MAGIA -->
+<div id="magia"></div>
+
+<div id="sobre">
+  <img id="abrir" src="Sobre.jpg">
+</div>
+
+<div id="contenedor">
+
+<div class="seccion"><img src="Fondo1.png"></div>
+
+<div class="seccion">
+  <div id="fondo2-wrapper">
+    <img src="Fondo2.png">
+    <div id="contador">
+      <div class="bloque"><div id="dias">00</div><div class="label">días</div></div>
+      <div class="bloque"><div id="horas">00</div><div class="label">horas</div></div>
+      <div class="bloque"><div id="minutos">00</div><div class="label">min</div></div>
+      <div class="bloque"><div id="segundos">00</div><div class="label">seg</div></div>
+    </div>
+    <button id="playpause">▶</button>
+  </div>
+</div>
+
+<div class="seccion"><div><img src="Fondo3.png"></div></div>
+
+<div class="seccion">
+  <div>
+    <img id="fondo4-img" src="Fondo4.png">
+    <a href="https://maps.app.goo.gl/MD7bgk7tkE3iEaZ8A" target="_blank" class="link-ceremonia"></a>
+    <a href="https://maps.app.goo.gl/vxCVoSkLKmwqCQobA" target="_blank" class="link-recepcion"></a>
+  </div>
+</div>
+
+<div class="seccion">
+  <div>
+    <img id="fondo5-img" src="Fondo5.png">
+    <a href="https://www.amazon.com.mx/" target="_blank" class="link-liverpool"></a>
+    <a href="https://wa.me/525530759268?text=Hola..." target="_blank" class="link-whatsapp"></a>
+  </div>
+</div>
+
+<div class="seccion">
+  <div>
+    <img id="fondo6-img" src="Fondo6.png">
+  </div>
+</div>
+
+</div>
+
+<audio id="musica" src="Musica.mp3" loop playsinline></audio>
+
+<script>
+const $=id=>document.getElementById(id),
+[abrir,contenedor,sobre,musica,playpause]=["abrir","contenedor","sobre","musica","playpause"].map($),
+[dias,horas,minutos,segundos]=["dias","horas","minutos","segundos"].map($);
+
+let on=false,fecha=new Date("October 17, 2026 19:00:00").getTime();
+
+abrir.onclick=async()=>{
+  sobre.style.display="none";
+  contenedor.style.display="block";
+  try{await musica.play();on=true;playpause.textContent="⏸"}catch{}
+};
+
+setInterval(()=>{
+  let d=fecha-Date.now();
+  [dias,horas,minutos,segundos].forEach((el,i)=>{
+    let v=[86400000,3600000,60000,1000][i],
+    r=Math.max(0,Math.floor(d/v));
+    d%=v; el.textContent=String(r).padStart(2,"0");
+  });
+},1000);
+
+playpause.onclick=async()=>{
+  if(on){musica.pause();on=false;playpause.textContent="▶"}
+  else try{await musica.play();on=true;playpause.textContent="⏸"}catch{}
+};
+
+/* ✨ ESTELA MÁGICA PRO */
+const magia=document.getElementById("magia");
+
+function rafaga(){
+  let baseX=Math.random()*window.innerWidth;
+  let baseY=Math.random()*window.innerHeight;
+
+  for(let i=0;i<25;i++){
+    let p=document.createElement("div");
+    p.className="particula";
+
+    let size=Math.random()*5+3;
+    p.style.width=size+"px";
+    p.style.height=size+"px";
+
+    p.style.left=baseX+"px";
+    p.style.top=baseY+"px";
+
+    p.style.setProperty("--x1",(Math.random()*200-100)+"px");
+    p.style.setProperty("--y1",(Math.random()*200-100)+"px");
+
+    p.style.setProperty("--x2",(Math.random()*400-200)+"px");
+    p.style.setProperty("--y2",(Math.random()*-400)+"px");
+
+    let dur=Math.random()*2+2;
+    p.style.animationDuration=dur+"s";
+
+    magia.appendChild(p);
+    setTimeout(()=>p.remove(),dur*1000);
+  }
+}
+
+setInterval(rafaga,800);
+</script>
+
+</body>
+</html>
